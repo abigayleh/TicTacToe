@@ -9,16 +9,12 @@ import java.util.Random;
 public class DumbAI implements AI {
 	private Random random = new Random();
 	private char aiPiece;
-
-    /*
-     * TBD: Create additional private members if useful.
-     */
     
     /**
      * Construct a DumbAI.
      * 
      * @param aiIsX Indicates whether the AI player's piece is
-     *              the 'X'.
+     *  the 'X'.
      */
     public DumbAI(boolean aiIsX) {
     	if(aiIsX == true)
