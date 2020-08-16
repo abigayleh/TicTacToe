@@ -1,5 +1,5 @@
 /**
- * An immutable class that represents the state of the 3×3 tic-tac-toe board.
+ * An immutable class that represents the state of the 3Ã—3 tic-tac-toe board.
  *
  * @author Abigayle Hickey
  */
@@ -156,6 +156,8 @@ public class Board {
 				return GameStatus.X_WON;
 			else if(board[1][2] == 'X' && board[3][6] == 'X' && board[5][10] == 'X')
 				return GameStatus.X_WON;
+		   	else if(board[5][2] == 'X' && board[3][6] == 'X' && board[1][10] == 'X')
+				return GameStatus.X_WON;
 			
 			else if(board[1][2] == 'O' && board[1][6] == 'O' && board[1][10] == 'O')
 				return GameStatus.O_WON;
@@ -170,6 +172,8 @@ public class Board {
 			else if(board[1][10] == 'O' && board[3][10] == 'O' && board[5][10] == 'O')
 				return GameStatus.O_WON;
 			else if(board[1][2] == 'O' && board[3][6] == 'O' && board[5][10] == 'O')
+				return GameStatus.O_WON;
+		    	else if(board[5][2] == 'O' && board[3][6] == 'O' && board[1][10] == 'O')
 				return GameStatus.O_WON;
 			
 			else if(isFull()) 
